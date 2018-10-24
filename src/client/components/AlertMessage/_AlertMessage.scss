@@ -1,0 +1,18 @@
+
+.alertMessage {
+  background-color: #333;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 23%;
+  padding: 20px;
+  text-align: center;
+
+    span {
+      position: absolute;
+      right: 20px;
+      font-weight: bold;
+      color: #FFF;
+      cursor: pointer;
+    }
+}

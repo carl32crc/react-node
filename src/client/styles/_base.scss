@@ -1,0 +1,19 @@
+
+/* CONFIG BASE */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import './_reset-styles';
+
+$primary-text-color: #000;
+$secondary-text-color: #A1A1A4;
+$theme-color: #8DC63F; 
+
+/*CONTAINERS*/
+@import './../containers/_App';
+
+/* COMPONENTS */
+@import './../components/AlertMessage/_AlertMessage';
+@import './../components/Input/_Input';
+@import './../components/Modal/_Modal';
+@import './../components/Spinner/_Spinner';
+@import './../components/Square/_Square'
+

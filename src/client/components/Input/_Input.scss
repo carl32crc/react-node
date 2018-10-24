@@ -1,0 +1,13 @@
+
+input {
+  border: none;
+  border-bottom: 1px solid #1b1e24;
+  background: #ebebeb;
+  font-size: 21px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 3px solid #009688 !important;
+  transition: border-bottom 0.3s ease !important;
+}

@@ -1,0 +1,53 @@
+{ 
+  "env": { 
+    "browser": true, 
+    "commonjs": true, 
+    "es6": true 
+  },
+  "globals": {
+    "__dirname": false,
+    "process": false
+  },
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended", 
+  "parserOptions": { 
+    "ecmaFeatures": { 
+      "jsx": true, 
+      "experimentalDecorators": true, 
+      "modules": true 
+    }, 
+    "ecmaVersion": 7, 
+    "sourceType": "module" 
+  }, 
+  "plugins": [ 
+    "react" 
+  ], 
+  "rules": { 
+    "indent": [ 
+      "error", 
+      2 
+    ], 
+    "linebreak-style": [ 
+      "error", 
+      "windows" 
+    ], 
+    "quotes": [ 
+      "error", 
+      "single" 
+    ], 
+    "semi": [ 
+      "error", 
+      "never" 
+    ],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ],
+    "react/jsx-uses-vars": 2, 
+    "react/jsx-uses-react": 2, 
+    "strict": 0
+  }
+}

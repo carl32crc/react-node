@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# package-log
+/package-lock.json
+
+# compiled output
+/build
+/coverage
+/dist/*.js
+/dist/css

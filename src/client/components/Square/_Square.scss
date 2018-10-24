@@ -1,0 +1,99 @@
+.squares {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+  
+  %card-style {
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 2px;
+    
+    background: white;
+    box-shadow: 0 2px 1px rgba(170,170,170,0.25);  
+  }
+  
+  .square-item {
+    @extend %card-style;
+  }
+  
+  .square-name {
+    font-weight: 400;
+  }
+
+  .square-image {
+    height: 170px;
+    width: 100%;
+    margin-top: 20px;
+
+    img {
+        height: 150px;
+    }
+  }
+  
+  .list {
+    .square-item {
+      position: relative;
+      padding: 0;
+  
+      font-size: 14px;
+      line-height: 40px;
+      
+      }
+      
+      @media screen and (max-width: 800px) {
+        .stage:not(.active) {
+          display: none;
+        }
+      }
+      
+    }
+
+    .square-name {
+      margin: 0 10px;
+    }
+    
+    .square-name {
+      vertical-align: middle;
+    }
+  
+  .list {
+    .grid-only {
+      display: none !important;
+    }
+  }
+  
+  .grid {
+    .grid-only {
+      display: auto;
+    }
+  }
+  
+  .grid {
+    .square-item {
+      height: 200px;
+      width: 250px;
+      margin-right: 10px;
+      cursor: pointer;
+      
+      @media screen and (max-width: 600px) {
+        display: block;
+        width: auto;
+        height: 150px;
+      }
+    }
+    
+    .square-name {
+      display: block;
+      max-width: 80%;
+      
+      font-size: 16px;
+      line-height: 20px;
+    }
+    
+    .survey-end-date {
+      color: $secondary-text-color;
+    }
+    
+  }
